@@ -1,0 +1,10 @@
+# Secretos y variables de entorno reales
+app/.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store
+Thumbs.db
