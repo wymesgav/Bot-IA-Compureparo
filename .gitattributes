@@ -1,0 +1,11 @@
+# Los scripts de shell DEBEN quedar con saltos de linea LF.
+# Si Git los convierte a CRLF (comportamiento por defecto en Windows), bash falla
+# en CloudShell con "bad interpreter: No such file or directory".
+*.sh text eol=lf
+
+# Lo mismo para lo que corre dentro del contenedor Linux.
+Dockerfile text eol=lf
+*.py text eol=lf
+
+# El catalogo es binario: que Git no intente "arreglarle" los saltos de linea.
+*.xlsx binary
